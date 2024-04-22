@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11451" started-at="2024-04-20T20:03:11Z" finished-at="2024-04-20T20:03:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11451" started-at="2024-04-20T20:03:11Z" finished-at="2024-04-20T20:03:22Z">
+      <class name="com.obv.test.SecondTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.obv.test.SecondTest@e45f292]" name="beforeTest" is-config="true" duration-ms="10014" started-at="2024-04-21T01:33:11Z" finished-at="2024-04-21T01:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="m2()[pri:0, instance:com.obv.test.SecondTest@e45f292]" name="m2" duration-ms="721" started-at="2024-04-21T01:33:21Z" finished-at="2024-04-21T01:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.obv.test.SecondTest@e45f292]" name="closeDriver" is-config="true" duration-ms="674" started-at="2024-04-21T01:33:22Z" finished-at="2024-04-21T01:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.obv.test.SecondTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
