@@ -15,7 +15,7 @@ final WebDriver driver;
 			this.driver=driver;
 		}
 		
-	//Locating user name
+	//Locating user name text box 
 		@FindBy(id="user-name")
 		WebElement username;
 	
