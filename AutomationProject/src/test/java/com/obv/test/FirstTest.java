@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.obv.pages.BasePage;
-import com.obv.pages.FirstPage;
-import com.obv.pages.HomePage;
+import com.automation.pages.BasePage;
+import com.automation.pages.FirstPage;
+import com.automation.pages.HomePage;
 
 
 public class FirstTest extends FirstPage {

@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.obv.pages.SecondPage;
+import com.automation.pages.SecondPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

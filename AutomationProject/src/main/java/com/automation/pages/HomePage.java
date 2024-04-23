@@ -1,4 +1,4 @@
-package com.obv.pages;
+package com.automation.pages;
 
 import java.time.Duration;
 
