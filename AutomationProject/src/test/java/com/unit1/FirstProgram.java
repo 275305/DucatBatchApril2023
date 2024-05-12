@@ -6,5 +6,6 @@ public class FirstProgram {
 		
 		System.out.println("This is first program");
 		System.out.println("This is fist program");
+		System.out.println("This is second program");
 	}
 }
