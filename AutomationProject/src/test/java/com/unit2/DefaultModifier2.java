@@ -1,4 +1,4 @@
-package java.unit2;
+package com.unit2;
 
 import com.unit1.DefaultModifier;
 

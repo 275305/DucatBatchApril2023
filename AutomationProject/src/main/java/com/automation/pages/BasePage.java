@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
+	
+	/*drop down handles*/
 
          public static void main(String[] args) throws Exception {
  			
