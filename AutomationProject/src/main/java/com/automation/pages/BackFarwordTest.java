@@ -23,6 +23,8 @@ public class BackFarwordTest {
 		Thread.sleep(2000);
 		driver.navigate().forward();
 		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		driver.close();
 
 	}
