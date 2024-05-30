@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import java.awt.Window;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -11,33 +12,40 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class MultiSelectDropDown {
-
+public class ListofElementExample {
+	
 	public static void main(String[] args) throws InterruptedException {
-
-		WebDriverManager.chromedriver().setup();
 		
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		driver.get("https://demoqa.com/select-menu");
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,450)");
-
-		WebElement element0 = driver.findElement(
-				By.xpath("//div[@id='selectMenuContainer']//div[@class='row']//div[@class=' css-1hwfws3']"));
-
-		element0.click();
-		List<WebElement> dropDownElements = driver.findElements(By.xpath("//div[@class=' css-26l3qy-menu']/div/div"));
-
-		for (WebElement element : dropDownElements) {
-			element.click();
-			Thread.sleep(2000);
-		}
-
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		
+		js.executeScript("window.scrollBy(0,450)");
+		
+		Select select=new Select(driver.findElement(By.id("cars")));
+		
+		          List<WebElement>  listAll=   select.getOptions();
+		          
+		         int length= listAll.size();
+		         
+		         for(int i=0;i<length;i++) {
+		        	 
+		        	 
+		         }
+		          
+		          for(WebElement list: listAll) {
+		        	  
+		        	  list.click();
+		          }
+		
 		Thread.sleep(3000);
-
+		
 		driver.close();
+		
 	}
 
 }

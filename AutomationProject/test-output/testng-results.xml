@@ -1,17 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20136" started-at="2024-05-21T15:01:03Z" finished-at="2024-05-21T15:01:23Z">
+  <suite name="Default suite" duration-ms="42593" started-at="2024-05-30T08:02:48Z" finished-at="2024-05-30T08:03:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20136" started-at="2024-05-21T15:01:03Z" finished-at="2024-05-21T15:01:23Z">
-      <class name="com.automation.pages.TitleVerify">
-        <test-method status="PASS" signature="m1()[pri:0, instance:com.automation.pages.TitleVerify@59ec2012]" name="m1" duration-ms="20110" started-at="2024-05-21T20:31:03Z" finished-at="2024-05-21T20:31:23Z">
+    <test name="Default test" duration-ms="42593" started-at="2024-05-30T08:02:48Z" finished-at="2024-05-30T08:03:31Z">
+      <class name="iFrame.assertions.FrameExample">
+        <test-method status="FAIL" signature="testAssertion()[pri:0, instance:iFrame.assertions.FrameExample@6fd02e5]" name="testAssertion" duration-ms="42537" started-at="2024-05-30T13:32:49Z" finished-at="2024-05-30T13:33:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	expected [Demo Guru99 Page1] but found [Demo Guru99 Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [Demo Guru99 Page1] but found [Demo Guru99 Page]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at iFrame.assertions.FrameExample.testAssertion(FrameExample.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- com.automation.pages.TitleVerify -->
+        </test-method> <!-- testAssertion -->
+      </class> <!-- iFrame.assertions.FrameExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,15 +1,15 @@
-package com.automation.pages;
+package concept.of.java;
 
 public class MethodOverloading1 {
 
-	public void fruit(String FruitName) {
+	public void fruit(String FruitName, double FruitBox) {
 
-		System.out.println("Fruit Name :" + FruitName);
+		System.out.println( FruitName +   FruitBox);
 
 	}
 	public void fruit(String FruitName, int FruitQuantity) {
 
-		System.out.println("Fruit Quantity KG :" + FruitQuantity);
+		System.out.println( FruitName + FruitQuantity);
 
 	}
 
@@ -19,7 +19,7 @@ public class MethodOverloading1 {
 		
 		
 		m1.fruit("Apple",20);
-		m1.fruit("Orange");
+		m1.fruit("Orange",5.5);
 
 	}
 
