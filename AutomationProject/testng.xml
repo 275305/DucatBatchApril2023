@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="day3.webelementintractionpart2.ReRunFailedTestCaseReTryListener"/>
+</listeners>
+<test thread-count="5" name="Test">
+<classes>
+<class name="day3.webelementintractionpart2.ReRunFailedTestCases"/>
+</classes>
+</test>
+
+
+<!-- <listeners>
+<listener class-name="day3.webelementintractionpart2.TestListener"/>
+</listeners>
+<test name="Test">
+<classes>
+<class name="day3.webelementintractionpart2.Listener1"/>
+<class name="day3.webelementintractionpart2.Listener2"/>
+</classes>
+
+</test> -->
+
+
+  <!-- <test name="Test">
+  <parameter name="url" value="https://www.saucedemo.com/"/>
+  <parameter name="uname" value="standard_user"/>
+  <parameter name="upassword" value="secret_sauce"/>
+    <classes>
+     <class name="day3.webelementintractionpart2.XmlSuitParameterization"/>
+     <class name="day3.webelementintractionpart2.ScrollingWindow"/> 
+    </classes>
+  </test> --> <!-- Test -->
+</suite> <!-- Suite -->

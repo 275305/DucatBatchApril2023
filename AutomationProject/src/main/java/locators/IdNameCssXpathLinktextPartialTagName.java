@@ -15,6 +15,10 @@ public class IdNameCssXpathLinktextPartialTagName {
 	public static void main(String[] args) {
 		
 		
+		// class name locator ->
+		
+		
+		
 		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver=new ChromeDriver();
@@ -29,6 +33,9 @@ public class IdNameCssXpathLinktextPartialTagName {
 		                 int i = list.size();
 		                 
 		                 for(int j=0;j<i;j++) {
+		                	 
+		   //Question-> How to verify broken link in application.
+		                	 // list -> property->href->list se iterete-> http client library
 		                	 
 		                	String linkName = list.get(j).getText();
 		                	System.out.println(linkName);

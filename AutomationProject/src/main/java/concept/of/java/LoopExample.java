@@ -5,14 +5,15 @@ public class LoopExample {
 	public static void main(String[] args) {
 		
 		//print 1 to 10
-		int n=10,j=1,k=1;
+		int n=10,k=1;
+		
 		for(int i=1;i<=10;i++) {
 			System.out.print( i);
 						
 		}
 		
 		System.out.println("");
-		
+		 int j=1;
 		 while(j<=10) {
 			 
 			 

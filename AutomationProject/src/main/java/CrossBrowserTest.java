@@ -8,6 +8,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class CrossBrowserTest {
 	
 	public static void main(String[] args) throws InterruptedException {
+		
+		// if else condition -> property file -> data read from property file
+		// if (browser== this) then  
 
 	/*	WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();

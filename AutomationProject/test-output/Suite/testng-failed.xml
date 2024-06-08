@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="day3.webelementintractionpart2.ReRunFailedTestCaseReTryListener"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="day3.webelementintractionpart2.ReRunFailedTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="day3.webelementintractionpart2.ReRunFailedTestCases">
+        <methods>
+          <include name="secondTestCase"/>
+          <include name="firstTestCase"/>
+        </methods>
+      </class> <!-- day3.webelementintractionpart2.ReRunFailedTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

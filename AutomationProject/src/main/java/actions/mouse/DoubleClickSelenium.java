@@ -28,6 +28,8 @@ public class DoubleClickSelenium {
 		WebElement button = driver.findElement(By.xpath("//button[text()='Double-Click Me To See Alert']"));
 		action.doubleClick(button).build().perform();
 		
+		
+		// build of work-> build and perform()?
 		//driver.close();
 		
 }

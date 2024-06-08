@@ -25,7 +25,7 @@ public class CaptureScreenShot {
 		// Take the screenshot
 		TakesScreenshot takeScreenShot=(TakesScreenshot)driver;
 		File fileSrc=takeScreenShot.getScreenshotAs(OutputType.FILE);
-		 File targetFile=new File("C:\\Users\\pradeep.chauhan\\eclipse-workspace2\\AutomationProject\\Screenshots\\xyz.png");
+		 File targetFile=new File("C:\\Users\\pradeep.chauhan\\eclipse-workspace2\\AutomationProject\\Screenshots\\ravi.png");
 		 FileUtils.copyFile(fileSrc, targetFile);
 		
 
