@@ -7,7 +7,6 @@
         <methods>
           <include name="loginTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.project.testCases.TC_LoginTest_001 -->
     </classes>

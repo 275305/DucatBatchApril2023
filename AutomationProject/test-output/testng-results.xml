@@ -1,56 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88218" started-at="2024-06-18T14:01:55Z" finished-at="2024-06-18T14:03:23Z">
+  <suite name="Default suite" duration-ms="12965" started-at="2024-06-19T15:12:45Z" finished-at="2024-06-19T15:12:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="88218" started-at="2024-06-18T14:01:55Z" finished-at="2024-06-18T14:03:23Z">
+    <test name="Default test" duration-ms="12965" started-at="2024-06-19T15:12:45Z" finished-at="2024-06-19T15:12:58Z">
       <class name="com.project.testCases.TC_LoginTest_001">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.project.testCases.TC_LoginTest_001@71809907]" name="setUp" is-config="true" duration-ms="87502" started-at="2024-06-18T19:31:55Z" finished-at="2024-06-18T19:33:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.project.testCases.TC_LoginTest_001@4fe3c938]" name="setUp" is-config="true" duration-ms="11090" started-at="2024-06-19T20:42:45Z" finished-at="2024-06-19T20:42:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String, org.openqa.selenium.WebDriver)[pri:0, instance:com.project.testCases.TC_LoginTest_001@71809907]" name="loginTest" duration-ms="0" started-at="2024-06-18T19:33:23Z" finished-at="2024-06-18T19:33:23Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method loginTest requires 3 parameters but 0 were supplied in the @Test annotation.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method loginTest requires 3 parameters but 0 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:193)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:129)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:385)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:495)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1253)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.project.testCases.TC_LoginTest_001@4fe3c938]" name="loginTest" duration-ms="972" started-at="2024-06-19T20:42:56Z" finished-at="2024-06-19T20:42:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.testCases.TC_LoginTest_001@71809907]" name="tearDown" is-config="true" duration-ms="12" started-at="2024-06-18T19:33:23Z" finished-at="2024-06-18T19:33:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.testCases.TC_LoginTest_001@4fe3c938]" name="tearDown" is-config="true" duration-ms="865" started-at="2024-06-19T20:42:57Z" finished-at="2024-06-19T20:42:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
