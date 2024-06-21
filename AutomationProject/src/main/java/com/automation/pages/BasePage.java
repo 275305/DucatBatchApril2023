@@ -41,9 +41,9 @@ public class BasePage {
             Thread.sleep(3000);
             
             
-			//driver.close();
+			driver.close();
 			// driver.findElement(By.xpath(""));
-			driver.quit();
+			//driver.quit();
 		
 	}
 }
