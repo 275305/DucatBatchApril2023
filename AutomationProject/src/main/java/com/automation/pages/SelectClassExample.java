@@ -18,13 +18,11 @@ public class SelectClassExample {
 		driver.manage().window().maximize();
 
 		driver.get("https://demo.guru99.com/test/newtours/register.php");
-		
-		 
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,350)");
-		
-			
+					
 		Select select=new Select(driver.findElement(By.name("country")));
+		select.selectByIndex(107);
 		
 		      //select by visible text-working fine
 		      //select.selectByVisibleText("AMERICAN SAMOA");

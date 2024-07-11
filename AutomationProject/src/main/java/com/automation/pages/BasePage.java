@@ -32,13 +32,18 @@ public class BasePage {
 
 			driver.get(BaseURL);
 			
-			driver.findElement(By.xpath("//select[@name='category']")).click();
+			/*driver.navigate().refresh();
+			driver.navigate().back();
+			driver.navigate().forward();*/
+			
+			
+			/*driver.findElement(By.xpath("//select[@name='category']")).click();
             Thread.sleep(3000);
             
             Select select = new Select(driver.findElement(By.xpath("//select[@name='category']")));
             
             select.selectByVisibleText("Car");
-            Thread.sleep(3000);
+            Thread.sleep(3000);*/
             
             
 			driver.close();

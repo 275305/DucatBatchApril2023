@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
@@ -37,6 +38,10 @@ public class FluentWaitExample {
 		       .withTimeout(Duration.ofSeconds(30))
 		       .pollingEvery(Duration.ofSeconds(5))
 		       .ignoring(NoSuchElementException.class);
+		   
+		   //use of fluent wait
+		   //elementToBeClickable(By.id("my_element"))
+		  // WebElement element = wait.until(ExpectedConditions.elementToBeClickable( ));
 		   
 		   // use of the fluent wait
 		   WebElement loginButton = wait.until(new Function<WebDriver, WebElement>() {
