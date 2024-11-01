@@ -15,12 +15,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.project.testCases.BaseClass;
 import com.project.testData.ReadExcelFile;
+import com.project.testData.ReadExcelWithSelenium;
 import com.project.utilities.Utility;
 
 public class LoginPage {
 
 	Logger logger = Logger.getLogger(LoginPage.class);
 	ReadExcelFile readExcel = new ReadExcelFile();
+	ReadExcelWithSelenium readNum=new ReadExcelWithSelenium();
 	WebDriver gdriver;
 
 	public LoginPage(WebDriver ldriver) {
@@ -40,7 +42,16 @@ public class LoginPage {
 	WebElement carhopsLink1;
 	
 	@FindBy(xpath="//input[@id=':rs:']")
+	WebElement mobileNumberLogin1;
+	
+	@FindBy(xpath="//div[@class='MuiGrid-root _mainContainer_16eko_42 css-vj1n65-MuiGrid-root']//input")
 	WebElement mobileNumberLogin;
+	
+	@FindBy(xpath="//input[@name='mobile']")
+	WebElement mobileNoPizzahut;
+	
+	@FindBy(xpath="//span[normalize-space()='Login']")
+	WebElement loginButtonPizzaHut;
 
 	// click on login button
 	public void clickLoginButton() {
@@ -75,15 +86,41 @@ public class LoginPage {
 		Utility.fluentWait(carhopsLink1, gdriver);
 
 	}
+	
+	public void clickLoginButtonPizzahut() {
+	
+		//loginButtonPizzaHut.click();
+		Utility.webDriverWait(loginButtonPizzaHut, gdriver);
+		logger.info("*CLICK ON LOGIN SUCCESSFULLY*");
+		
+	}
+	
+	public void setmobileNoPizzahut() {
+		
+		int mobileNumber =readNum.readExcelNumricValue();
+		Utility.webDriverWaitSendKey(mobileNoPizzahut, gdriver, mobileNumber);
+		
+		//mobileNoPizzahut.sendKeys("1234567");
+		logger.info("*SEND THE MOBILE NO SUCCESSFULLY*");
+		
+	}
 
 	public void setMobileNumber() throws IOException {
+		
+		int mobileNumber =readNum.readExcelNumricValue();
+		
+		//mobileNumberLogin.sendKeys("mobileNumber");
 
-		String mobileNumber = readExcel.readExcel_Files(1, 0);
+		/*//String mobileNumber = readExcel.readExcel_Files(1, 0);
+		int mobileNumber =readNum.readExcelNumricValue();
+		
+		   
+		
 		logger.info("*READ MOBILE NUMBER FROM EXCEL SUCCESSFULLY*");
 		
 		//int number = Integer.parseInt(mobileNumber);
 
-		mobileNumberLogin.sendKeys(mobileNumber);
+		mobileNumberLogin.sendKeys("mobileNumber");*/
 	}
 
 }

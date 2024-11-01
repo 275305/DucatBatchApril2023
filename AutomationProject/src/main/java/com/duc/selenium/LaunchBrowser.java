@@ -8,14 +8,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LaunchBrowser {
 	
 	
-
-	public static void main(String[] args) throws InterruptedException {
+    @Test
+	public void launchBrowser() throws InterruptedException {
 
 		String expectedTitle = "Google";
 

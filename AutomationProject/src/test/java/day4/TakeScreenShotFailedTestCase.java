@@ -2,6 +2,8 @@ package day4;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -34,7 +36,7 @@ public class TakeScreenShotFailedTestCase {
 	}
 
 	@Test(priority = 0)
-	public void testone() {
+	public void testtwo() {
 
 		String titleActual = driver.getTitle();
 		String expectedTitle = "GoogleTest";
@@ -52,22 +54,34 @@ public class TakeScreenShotFailedTestCase {
 		if (ITestResult.FAILURE == result.getStatus()) {
 			
 			
-			UtilityScreenShot.takeScreenShot(driver, result.getName());
+		/*	UtilityScreenShot.takeScreenShot(driver, result.getName());
+			String timeStamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+			
+			TakesScreenshot takesScreenshot=(TakesScreenshot)driver;
+			 File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+			 File targetFile = new File(
+						"C:\\Users\\pradeep.chauhan\\eclipse-workspace2\\AutomationProject\\Screenshots\\failure.png");
+				FileUtils.copyFile(sourceFile, targetFile);
+			 
+			 String targetFilePath = System.getProperty("user.dir"+"\\screenshots\\" +tname +"_" + timeStamp + ".png");
+			 
+			 File targetFile=new File(targetFilePath);
+			 sourceFile.renameTo(targetFile);*/
 		  
 
-			/*TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
+		/*	TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
 			File fileSrc = takeScreenShot.getScreenshotAs(OutputType.FILE);
 			File targetFile = new File(
 					"C:\\Users\\pradeep.chauhan\\eclipse-workspace2\\AutomationProject\\Screenshots\\failure.png");
-			FileUtils.copyFile(fileSrc, targetFile);*/
-			/*
-			 * File screenShotFile = ((TakesScreenshot)
-			 * driver).getScreenshotAs(OutputType.FILE);
-			 * 
-			 * FileUtils.copyFile(screenShotFile, new File(
-			 * "C:\\Users\\pradeep.chauhan\\eclipse-workspace2\\AutomationProject\\Screenshots\\Failure.png"
-			 * ));
-			 */
+			FileUtils.copyFile(fileSrc, targetFile);
+			
+			 File screenShotFile = ((TakesScreenshot)
+			 driver).getScreenshotAs(OutputType.FILE);
+			 
+			  FileUtils.copyFile(screenShotFile, new File(
+			  "C:\\Users\\pradeep.chauhan\\eclipse-workspace2\\AutomationProject\\Screenshots\\Failure.png"
+			  ));*/
+			 
 		}
 
 	}

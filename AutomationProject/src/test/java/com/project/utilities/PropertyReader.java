@@ -37,7 +37,7 @@ public class PropertyReader {
 	 
 
 	public String getApplicationURL() {
-		String applicationURL = property.getProperty("applicationURL");
+		String applicationURL = property.getProperty("suaceURL");
 		
 		return applicationURL;
 

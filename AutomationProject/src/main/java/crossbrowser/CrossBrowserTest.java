@@ -15,9 +15,9 @@ public class CrossBrowserTest {
 		// if else condition -> property file -> data read from property file
 		// if (browser== this) then  
 
-	/*	WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();*/
+		driver.manage().window().maximize();
 
 		
 		WebDriverManager.firefoxdriver().setup();
@@ -25,9 +25,9 @@ public class CrossBrowserTest {
 		driver2.manage().window().maximize();
 		
 		
-	/*	WebDriverManager.iedriver().setup();
+		WebDriverManager.iedriver().setup();
 		WebDriver driver3 = new InternetExplorerDriver();
-		driver.manage().window().maximize();*/
+		driver.manage().window().maximize();
 		
 		driver2.get("https://demoqa.com/radio-button");
 		

@@ -21,6 +21,22 @@ public class Utility {
 	}*/
 
 	
+	public static void webDriverWaitSendKey(WebElement element, WebDriver driver, int value)  {
+
+		try {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		WebElement webElement4 = wait.until(ExpectedConditions.elementToBeClickable(element));
+		
+		webElement4.sendKeys(String.valueOf(value));
+		Thread.sleep(2000);
+		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
 
 	public static void webDriverWait(WebElement element, WebDriver driver)  {
 

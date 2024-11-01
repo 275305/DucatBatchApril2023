@@ -1,5 +1,6 @@
 package actions.mouse;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -19,16 +20,19 @@ public class DragAndDropSelenium {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 		driver.get("https://demo.guru99.com/test/drag_drop.html");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("window.scrollBy(0,250)");
 		
+		//a[normalize-space()='BANK']
 		WebElement from = driver.findElement(By.xpath("//a[normalize-space()='BANK']"));
 		WebElement to = driver.findElement(By.xpath("//ol[@id='bank']//li[@class='placeholder']"));
 
+		//ol[@id='bank']//li[@class='placeholder']
+		
 		// Drag and drop
 		Actions action = new Actions(driver);
 		

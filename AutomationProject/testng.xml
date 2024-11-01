@@ -3,8 +3,8 @@
 <suite name="Suite">
 <test thread-count="5" name="Test"> 
 <classes>
-<!-- <class name="duc.april.LoginSauce"/> -->
-<class name="crossbrowser.CrossBrowserTest"></class>
+<class name="com.duc.selenium.LaunchBrowser"/>
+<class name="com.duc.selenium.HoverMouse"/>
 </classes>
 </test>
   </suite> 
